@@ -1,2 +1,2 @@
 # gama-no-javascript-basico
-index.html
+./index.html
