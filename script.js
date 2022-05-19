@@ -6,13 +6,14 @@ function ValidaCPF(valor){
         validador1=validador1+(valor(i)*(10-i));
     }
     validador1=(validador1*10)%11;
+    console.log("Validador1"+validador1);
     var validador2 =0;
     for(let i=0;i<valor.length-1;i++){
         validador2=validador2+(valor(i)*(11-i));
     }  
     validador2=(validador2*10)%11;
-
-    
+    console.log("Validador2"+validador2);
+    console.log("Tamanho"+valor.length);
     if((valor.length==11)&&(validador1=valor(9))&&(validador2=valor(10))){
         return true;
     }else{
