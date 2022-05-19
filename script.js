@@ -37,9 +37,11 @@ function obterDados(){
     if (ValidaCPF(valor)){
         document.getElementById("success").style.display = "block";
         console.log("success");
-                            } 
+        document.getElementById("digitado").value="";                    
+                        } 
     else                   {
         document.getElementById("error").style.display = "block";    
         console.log("error");
+        document.getElementById("digitado").value="";
                             }
                     }
