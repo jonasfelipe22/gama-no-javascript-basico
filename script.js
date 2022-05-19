@@ -1,3 +1,1 @@
-<script>
-    
-</script>
+console.log("Carregar....");
