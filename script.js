@@ -1,6 +1,21 @@
 console.log("Carregar....");
-function validacao_CPF(){
-    console.log("...Iniciando Validação...");//Testando se entrou na função
-    var CPF = document.getElementById("CPF_dig").value;
-    console.log(CPF);
+function ValidaCPF(valor){
+    console.log("VALIDA CPF");
+    return false;
 }
+
+function obterDados(){
+    console.log("...Iniciando Validação...");//Testando se entrou na função
+    var valor = document.getElementById("digitado").value;
+    console.log(valor);
+    ValidaCPF(valor);
+
+    if (ValidaCPF){
+        document.getElementById("success").style.display = "block";
+        console.log("success");
+                } 
+    else {
+        document.getElementById("error").style.display = "block";    
+        console.log("error");
+         }
+                    }
