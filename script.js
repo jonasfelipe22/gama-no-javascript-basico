@@ -10,12 +10,12 @@ function obterDados(){
     console.log(valor);
     ValidaCPF(valor);
 
-    if (ValidaCPF){
+    if (ValidaCPF == true ){
         document.getElementById("success").style.display = "block";
         console.log("success");
-                } 
-    else {
+                            } 
+    else                   {
         document.getElementById("error").style.display = "block";    
         console.log("error");
-         }
+                            }
                     }
