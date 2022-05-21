@@ -33,6 +33,8 @@ function obterDados(){
     let valor = document.getElementById("digitado").value;
     console.log(valor);
     ValidaCPF(valor);
+    document.getElementById("success").style.display = "none";
+    document.getElementById("error").style.display = "none";
     console.log( ValidaCPF(valor));
     if (ValidaCPF(valor)){
         document.getElementById("success").style.display = "block";
